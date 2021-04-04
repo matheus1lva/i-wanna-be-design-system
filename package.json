@@ -1,0 +1,19 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "PlayMa256 <matheus.g.silva@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "generate": "plop "
+  },
+  "workspaces":[
+    "packages/*"
+  ],
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "lerna": "^4.0.0",
+    "plop": "^2.7.4",
+    "ts-jest": "^26.5.4"
+  }
+}
