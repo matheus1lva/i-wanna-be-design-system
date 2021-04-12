@@ -25,6 +25,11 @@ module.exports = function (plop) {
         path: "packages/{{dashCase name}}/tsconfig.json",
         templateFile: "templates/tsconfig.json.hbs",
       },
+      {
+        type: "add",
+        path: "packages/{{dashCase name}}/jest.config.js",
+        templateFile: "templates/jest.config.js.hbs",
+      },
     ],
   });
 };

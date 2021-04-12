@@ -8,7 +8,8 @@
   "scripts": {
     "generate": "plop && yarn",
     "build": "lerna run build --stream --sort --parallel",
-    "eslint": "eslint packages/ --extensions '.ts, .tsx'"
+    "eslint": "eslint packages/ --extensions '.ts, .tsx'",
+    "test": "lerna run test --stream --parallel"
   },
   "workspaces": [
     "packages/*"
