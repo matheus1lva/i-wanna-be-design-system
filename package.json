@@ -9,12 +9,20 @@
     "generate": "plop && yarn",
     "build": "lerna run build --stream --sort --parallel",
     "eslint": "eslint packages/ --extensions '.ts, .tsx'",
-    "test": "lerna run test --stream --parallel"
+    "test": "lerna run test --stream --parallel",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@storybook/addon-a11y": "^6.3.7",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/react": "^6.3.7",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^13.0.1",
@@ -24,6 +32,7 @@
     "@types/styled-components": "^5.1.9",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
